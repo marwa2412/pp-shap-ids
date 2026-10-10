@@ -1,0 +1,435 @@
+{
+  "format_version": 1,
+  "scope": "Pinned mirror sources; not certification of equivalence to original dataset releases",
+  "logical_hash_definition": "SHA256(JSON ordered [name,Arrow-type] schema; then little-endian uint64 pandas row hashes, index=False, of first 160000 source rows); pandas 3.0.2",
+  "datasets": {
+    "UNSW_NB15": {
+      "repository": "Mouwiya/UNSW-NB15",
+      "revision": "8ad6b19373f143086a66f52b0d6035a6959d83a9",
+      "format": "parquet",
+      "cache_folder": "Mouwiya___unsw-nb15",
+      "files": [
+        {
+          "path": "data/train-00000-of-00002.parquet",
+          "sha256": "2aada2a26d061111f4e8fb84e716f5f11264fee71abe04697d42cb89e488d047",
+          "size_bytes": 124419404,
+          "url": "https://huggingface.co/datasets/Mouwiya/UNSW-NB15/resolve/8ad6b19373f143086a66f52b0d6035a6959d83a9/data/train-00000-of-00002.parquet"
+        },
+        {
+          "path": "data/train-00001-of-00002.parquet",
+          "sha256": "7c6699ae967567977dee9e9193543b515255f4e1671ca79bf9ae65e7866ffef1",
+          "size_bytes": 105596940,
+          "url": "https://huggingface.co/datasets/Mouwiya/UNSW-NB15/resolve/8ad6b19373f143086a66f52b0d6035a6959d83a9/data/train-00001-of-00002.parquet"
+        }
+      ],
+      "arrow_names": [
+        "unsw-nb15-train-00000-of-00002.arrow",
+        "unsw-nb15-train-00001-of-00002.arrow"
+      ],
+      "logical_cache": {
+        "rows": 2280090,
+        "prefix_rows": 160000,
+        "schema": [
+          [
+            "srcip",
+            "string"
+          ],
+          [
+            "sport",
+            "string"
+          ],
+          [
+            "dstip",
+            "string"
+          ],
+          [
+            "dsport",
+            "string"
+          ],
+          [
+            "proto",
+            "string"
+          ],
+          [
+            "state",
+            "string"
+          ],
+          [
+            "dur",
+            "double"
+          ],
+          [
+            "sbytes",
+            "int64"
+          ],
+          [
+            "dbytes",
+            "int64"
+          ],
+          [
+            "sttl",
+            "int64"
+          ],
+          [
+            "dttl",
+            "int64"
+          ],
+          [
+            "sloss",
+            "int64"
+          ],
+          [
+            "dloss",
+            "int64"
+          ],
+          [
+            "service",
+            "string"
+          ],
+          [
+            "Sload",
+            "double"
+          ],
+          [
+            "Dload",
+            "double"
+          ],
+          [
+            "Spkts",
+            "int64"
+          ],
+          [
+            "Dpkts",
+            "int64"
+          ],
+          [
+            "swin",
+            "int64"
+          ],
+          [
+            "dwin",
+            "int64"
+          ],
+          [
+            "stcpb",
+            "int64"
+          ],
+          [
+            "dtcpb",
+            "int64"
+          ],
+          [
+            "smeansz",
+            "int64"
+          ],
+          [
+            "dmeansz",
+            "int64"
+          ],
+          [
+            "trans_depth",
+            "int64"
+          ],
+          [
+            "res_bdy_len",
+            "int64"
+          ],
+          [
+            "Sjit",
+            "double"
+          ],
+          [
+            "Djit",
+            "double"
+          ],
+          [
+            "Stime",
+            "int64"
+          ],
+          [
+            "Ltime",
+            "int64"
+          ],
+          [
+            "Sintpkt",
+            "double"
+          ],
+          [
+            "Dintpkt",
+            "double"
+          ],
+          [
+            "tcprtt",
+            "double"
+          ],
+          [
+            "synack",
+            "double"
+          ],
+          [
+            "ackdat",
+            "double"
+          ],
+          [
+            "is_sm_ips_ports",
+            "int64"
+          ],
+          [
+            "ct_state_ttl",
+            "int64"
+          ],
+          [
+            "ct_flw_http_mthd",
+            "double"
+          ],
+          [
+            "is_ftp_login",
+            "double"
+          ],
+          [
+            "ct_ftp_cmd",
+            "string"
+          ],
+          [
+            "ct_srv_src",
+            "int64"
+          ],
+          [
+            "ct_srv_dst",
+            "int64"
+          ],
+          [
+            "ct_dst_ltm",
+            "int64"
+          ],
+          [
+            "ct_src_ltm",
+            "int64"
+          ],
+          [
+            "ct_src_dport_ltm",
+            "int64"
+          ],
+          [
+            "ct_dst_sport_ltm",
+            "int64"
+          ],
+          [
+            "ct_dst_src_ltm",
+            "int64"
+          ],
+          [
+            "attack_cat",
+            "string"
+          ],
+          [
+            "label",
+            "int64"
+          ]
+        ],
+        "prefix_logical_sha256": "f54f2c44a061faf40955afe28b32f3ce6bed448fca86538c10686a481a5019ae"
+      }
+    },
+    "TON_IOT": {
+      "repository": "codymlewis/TON_IoT_network",
+      "revision": "b953d9388d2db3bc392ea7150476e4f219a2a1cb",
+      "format": "csv",
+      "cache_folder": "codymlewis___ton_io_t_network",
+      "files": [
+        {
+          "path": "train_test_network.csv",
+          "sha256": "26ddc513552de36de6428b2e578efaed2b57504c716dfba847cc0109a64e1974",
+          "size_bytes": 29902775,
+          "url": "https://huggingface.co/datasets/codymlewis/TON_IoT_network/resolve/b953d9388d2db3bc392ea7150476e4f219a2a1cb/train_test_network.csv"
+        }
+      ],
+      "arrow_names": [
+        "ton_io_t_network-train.arrow"
+      ],
+      "logical_cache": {
+        "rows": 211043,
+        "prefix_rows": 160000,
+        "schema": [
+          [
+            "src_ip",
+            "string"
+          ],
+          [
+            "src_port",
+            "int64"
+          ],
+          [
+            "dst_ip",
+            "string"
+          ],
+          [
+            "dst_port",
+            "int64"
+          ],
+          [
+            "proto",
+            "string"
+          ],
+          [
+            "service",
+            "string"
+          ],
+          [
+            "duration",
+            "double"
+          ],
+          [
+            "src_bytes",
+            "int64"
+          ],
+          [
+            "dst_bytes",
+            "int64"
+          ],
+          [
+            "conn_state",
+            "string"
+          ],
+          [
+            "missed_bytes",
+            "int64"
+          ],
+          [
+            "src_pkts",
+            "int64"
+          ],
+          [
+            "src_ip_bytes",
+            "int64"
+          ],
+          [
+            "dst_pkts",
+            "int64"
+          ],
+          [
+            "dst_ip_bytes",
+            "int64"
+          ],
+          [
+            "dns_query",
+            "string"
+          ],
+          [
+            "dns_qclass",
+            "int64"
+          ],
+          [
+            "dns_qtype",
+            "int64"
+          ],
+          [
+            "dns_rcode",
+            "int64"
+          ],
+          [
+            "dns_AA",
+            "string"
+          ],
+          [
+            "dns_RD",
+            "string"
+          ],
+          [
+            "dns_RA",
+            "string"
+          ],
+          [
+            "dns_rejected",
+            "string"
+          ],
+          [
+            "ssl_version",
+            "string"
+          ],
+          [
+            "ssl_cipher",
+            "string"
+          ],
+          [
+            "ssl_resumed",
+            "string"
+          ],
+          [
+            "ssl_established",
+            "string"
+          ],
+          [
+            "ssl_subject",
+            "string"
+          ],
+          [
+            "ssl_issuer",
+            "string"
+          ],
+          [
+            "http_trans_depth",
+            "string"
+          ],
+          [
+            "http_method",
+            "string"
+          ],
+          [
+            "http_uri",
+            "string"
+          ],
+          [
+            "http_version",
+            "string"
+          ],
+          [
+            "http_request_body_len",
+            "int64"
+          ],
+          [
+            "http_response_body_len",
+            "int64"
+          ],
+          [
+            "http_status_code",
+            "int64"
+          ],
+          [
+            "http_user_agent",
+            "string"
+          ],
+          [
+            "http_orig_mime_types",
+            "string"
+          ],
+          [
+            "http_resp_mime_types",
+            "string"
+          ],
+          [
+            "weird_name",
+            "string"
+          ],
+          [
+            "weird_addl",
+            "string"
+          ],
+          [
+            "weird_notice",
+            "string"
+          ],
+          [
+            "label",
+            "int64"
+          ],
+          [
+            "type",
+            "string"
+          ]
+        ],
+        "prefix_logical_sha256": "e5e2451c5d49f6b301651a2be83643cd971c7ae74547ce4bed7c2bf5e14e628c"
+      },
+      "test_alias": "ton_io_t_network-test.arrow"
+    }
+  }
+}

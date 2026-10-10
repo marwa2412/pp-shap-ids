@@ -1,0 +1,20 @@
+{
+  "source_snapshot": "camera-ready-submission-2026-10-01",
+  "scope": "11 unmodified experimental and verification scripts; numerical-only helper recorded separately",
+  "sha256": {
+    "evaluation.py": "3df08c2ca04c935629339e2f3fd2792665700adff52d771646eb8a7b7174483f",
+    "ledger.py": "8612d5083a3d6a26e1425478c1cad82a99ac9cdd908b2dd4f5f6931fc3b03ff1",
+    "run_camera_ready.py": "f0544e5e3fadb66ca6aeed91f400099be35773c8734540a71ac8ee1f23cf954d",
+    "run_generalization.py": "1e6388ea1348d0b0d5e9b5255aabfe4527378f6c532413a2eebe9bb39aa61f16",
+    "run_ledger_validation.py": "15a5a89acefdd524434454cc633adee1bff5a227cee9b3278129d8696f538691",
+    "run_random_controls.py": "6197cfed777fad6050cc58e0ff4258c40ceb8082d1ef7febdc43fbced4b28832",
+    "run_request_latency.py": "16d8495f1a1a32459f7fc065deb0879161da0cc99546fe7a3bf574ffde47459d",
+    "run_scaling_replay.py": "56973ce874853ba66984852eab441eece71e4500fc334f6b65578ba18c29ec06",
+    "run_second_backbone.py": "bad4a8624e619dea6c65687c68617df986b39c48fe4cba1837b41604a78599ed",
+    "verify_reviewer3.py": "9499bb8fbb84daee5684144e25a92323da016ef79b1f48c7c870617d859cd582",
+    "verify_technical.py": "4a6730819bdbfc626c2bbb4d89c8900dda3582529f07338a8b59da98de0c9bcf"
+  },
+  "additional_sha256": {
+    "export_numerical_results.py": "c7822f968a116c92589aa2dd7e1ad1d5439539d55de5f185e74107ea967557b6"
+  }
+}

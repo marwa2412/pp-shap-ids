@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite this software when using the code. Associated paper publication metadata will be added once available."
+type: software
+repository-code: "https://github.com/marwa2412/pp-shap-ids"
+url: "https://github.com/marwa2412/pp-shap-ids"
+title: "Controlled Explanation Disclosure for Intrusion Detection: Empirical Evaluation and Evidence Replay"
+authors:
+  - family-names: Elarfaoui
+    given-names: Marwa
+  - family-names: Chetioui
+    given-names: Kaouthar
+  - family-names: Hraoui
+    given-names: Said
+abstract: "Experimental PP-SHAP disclosure, feature-space evasion, reconstruction fidelity, and checkpointed evidence replay for intrusion detection."
+keywords:
+  - explainable artificial intelligence
+  - intrusion detection
+  - controlled disclosure
+  - reproducibility
