@@ -1,0 +1,413 @@
+{
+  "status": "passed",
+  "models": 2,
+  "detection_predictions": 107920,
+  "adversarial_predictions": 25000,
+  "bound_checks": 75000,
+  "bound_below_one": 960,
+  "backbone_results": {
+    "UNSW_NB15": {
+      "detection": {
+        "tp": 7982,
+        "tn": 53798,
+        "fp": 1431,
+        "fn": 175,
+        "f1": 0.9085941946499715,
+        "precision": 0.8479762031233401,
+        "recall": 0.9785460340811573,
+        "fpr": 0.02591030074779554,
+        "accuracy": 0.9746631748335595,
+        "auroc": 0.994620665671863
+      },
+      "runs": [
+        {
+          "none": 0.108,
+          "raw": 0.408,
+          "pp": 0.13999999999999999,
+          "drop": 0.268,
+          "public_mae": 0.29639174999100043,
+          "seed": 42
+        },
+        {
+          "none": 0.118,
+          "raw": 0.446,
+          "pp": 0.15133333333333332,
+          "drop": 0.2946666666666667,
+          "public_mae": 0.29581992957507447,
+          "seed": 43
+        },
+        {
+          "none": 0.108,
+          "raw": 0.432,
+          "pp": 0.15333333333333335,
+          "drop": 0.2786666666666666,
+          "public_mae": 0.3097021257462221,
+          "seed": 44
+        },
+        {
+          "none": 0.128,
+          "raw": 0.432,
+          "pp": 0.164,
+          "drop": 0.268,
+          "public_mae": 0.30022306743846827,
+          "seed": 45
+        },
+        {
+          "none": 0.08,
+          "raw": 0.43,
+          "pp": 0.12133333333333333,
+          "drop": 0.30866666666666664,
+          "public_mae": 0.3015132591038103,
+          "seed": 46
+        }
+      ],
+      "aggregates": {
+        "none": {
+          "mean": 0.10839999999999998,
+          "sd": 0.01791089054179049
+        },
+        "raw": {
+          "mean": 0.42960000000000004,
+          "sd": 0.013667479650615922
+        },
+        "pp": {
+          "mean": 0.146,
+          "sd": 0.016206994374857626
+        },
+        "drop": {
+          "mean": 0.28359999999999996,
+          "sd": 0.017761381327663295
+        },
+        "public_mae": {
+          "mean": 0.3007300263709151,
+          "sd": 0.005574466803347652
+        }
+      }
+    },
+    "TON_IOT": {
+      "detection": {
+        "tp": 32787,
+        "tn": 11285,
+        "fp": 136,
+        "fn": 326,
+        "f1": 0.993003816100309,
+        "precision": 0.9958691492269842,
+        "recall": 0.990154924047957,
+        "fpr": 0.011907888976446896,
+        "accuracy": 0.9896259038038353,
+        "auroc": 0.9919676336655691
+      },
+      "runs": [
+        {
+          "none": 0.094,
+          "raw": 0.16,
+          "pp": 0.08933333333333333,
+          "drop": 0.07066666666666667,
+          "public_mae": 0.24177961136836823,
+          "seed": 42
+        },
+        {
+          "none": 0.074,
+          "raw": 0.254,
+          "pp": 0.08600000000000001,
+          "drop": 0.16799999999999998,
+          "public_mae": 0.24522103221619784,
+          "seed": 43
+        },
+        {
+          "none": 0.086,
+          "raw": 0.034,
+          "pp": 0.06933333333333334,
+          "drop": -0.03533333333333334,
+          "public_mae": 0.23590012978755348,
+          "seed": 44
+        },
+        {
+          "none": 0.08,
+          "raw": 0.17,
+          "pp": 0.09333333333333332,
+          "drop": 0.07666666666666669,
+          "public_mae": 0.233842395339977,
+          "seed": 45
+        },
+        {
+          "none": 0.068,
+          "raw": 0.194,
+          "pp": 0.09533333333333334,
+          "drop": 0.09866666666666667,
+          "public_mae": 0.24349685087954062,
+          "seed": 46
+        }
+      ],
+      "aggregates": {
+        "none": {
+          "mean": 0.0804,
+          "sd": 0.010139033484509258
+        },
+        "raw": {
+          "mean": 0.16240000000000002,
+          "sd": 0.08052825591058085
+        },
+        "pp": {
+          "mean": 0.08666666666666667,
+          "sd": 0.010338708279513878
+        },
+        "drop": {
+          "mean": 0.07573333333333335,
+          "sd": 0.07314612467899824
+        },
+        "public_mae": {
+          "mean": 0.24004800391832742,
+          "sd": 0.004933752859789253
+        }
+      }
+    }
+  },
+  "latency": {
+    "batches": 1200,
+    "record_predictions": 115600,
+    "summary": [
+      {
+        "dataset": "TON_IOT",
+        "model": "LogReg",
+        "batch_size": 1,
+        "repeats": 100,
+        "preprocess_p50_ms": 8.7698125,
+        "preprocess_p95_ms": 9.64320445,
+        "predict_p50_ms": 0.512917,
+        "predict_p95_ms": 0.62559615,
+        "shap_p50_ms": 0.3828335,
+        "shap_p95_ms": 0.43354165,
+        "release_render_p50_ms": 0.048687,
+        "release_render_p95_ms": 0.07356694999999999,
+        "ledger_append_p50_ms": 0.0821255,
+        "ledger_append_p95_ms": 0.10287499999999998,
+        "total_p50_ms": 9.795291,
+        "total_p95_ms": 10.87545445,
+        "amortized_p50_ms": 9.795291,
+        "serial_equivalent_records_per_second": 102.0898715515445
+      },
+      {
+        "dataset": "TON_IOT",
+        "model": "LogReg",
+        "batch_size": 32,
+        "repeats": 100,
+        "preprocess_p50_ms": 8.798874999999999,
+        "preprocess_p95_ms": 9.882035100000001,
+        "predict_p50_ms": 0.5312494999999999,
+        "predict_p95_ms": 0.66327565,
+        "shap_p50_ms": 0.394083,
+        "shap_p95_ms": 0.42072915,
+        "release_render_p50_ms": 0.1411455,
+        "release_render_p95_ms": 0.18119819999999998,
+        "ledger_append_p50_ms": 2.0130415,
+        "ledger_append_p95_ms": 2.24510805,
+        "total_p50_ms": 11.89175,
+        "total_p95_ms": 13.329175,
+        "amortized_p50_ms": 0.3716171875,
+        "serial_equivalent_records_per_second": 2690.941198730212
+      },
+      {
+        "dataset": "TON_IOT",
+        "model": "LogReg",
+        "batch_size": 256,
+        "repeats": 100,
+        "preprocess_p50_ms": 8.872916499999999,
+        "preprocess_p95_ms": 9.789342,
+        "predict_p50_ms": 0.5276460000000001,
+        "predict_p95_ms": 0.64669375,
+        "shap_p50_ms": 0.411729,
+        "shap_p95_ms": 0.4497354,
+        "release_render_p50_ms": 0.7576455,
+        "release_render_p95_ms": 0.86879555,
+        "ledger_append_p50_ms": 15.859208500000001,
+        "ledger_append_p95_ms": 17.43605865,
+        "total_p50_ms": 26.430146,
+        "total_p95_ms": 29.45966875,
+        "amortized_p50_ms": 0.1032427578125,
+        "serial_equivalent_records_per_second": 9685.90941571038
+      },
+      {
+        "dataset": "TON_IOT",
+        "model": "XGBoost",
+        "batch_size": 1,
+        "repeats": 100,
+        "preprocess_p50_ms": 8.780438,
+        "preprocess_p95_ms": 9.79981875,
+        "predict_p50_ms": 1.0460625000000001,
+        "predict_p95_ms": 1.3471163499999999,
+        "shap_p50_ms": 1.960208,
+        "shap_p95_ms": 2.3573931499999996,
+        "release_render_p50_ms": 0.0519375,
+        "release_render_p95_ms": 0.08725559999999999,
+        "ledger_append_p50_ms": 0.087979,
+        "ledger_append_p95_ms": 0.12330895,
+        "total_p50_ms": 11.905687,
+        "total_p95_ms": 13.8370997,
+        "amortized_p50_ms": 11.905687,
+        "serial_equivalent_records_per_second": 83.99347303519738
+      },
+      {
+        "dataset": "TON_IOT",
+        "model": "XGBoost",
+        "batch_size": 32,
+        "repeats": 100,
+        "preprocess_p50_ms": 8.7643955,
+        "preprocess_p95_ms": 9.516845199999999,
+        "predict_p50_ms": 1.1559375,
+        "predict_p95_ms": 1.3453374999999999,
+        "shap_p50_ms": 8.088750000000001,
+        "shap_p95_ms": 9.0361473,
+        "release_render_p50_ms": 0.143208,
+        "release_render_p95_ms": 0.19723125,
+        "ledger_append_p50_ms": 2.0154375,
+        "ledger_append_p95_ms": 2.2290151999999996,
+        "total_p50_ms": 20.154125,
+        "total_p95_ms": 22.603924349999996,
+        "amortized_p50_ms": 0.62981640625,
+        "serial_equivalent_records_per_second": 1587.764291429174
+      },
+      {
+        "dataset": "TON_IOT",
+        "model": "XGBoost",
+        "batch_size": 256,
+        "repeats": 100,
+        "preprocess_p50_ms": 8.916896000000001,
+        "preprocess_p95_ms": 10.09537465,
+        "predict_p50_ms": 1.2636669999999999,
+        "predict_p95_ms": 1.50572915,
+        "shap_p50_ms": 53.8881665,
+        "shap_p95_ms": 58.874495499999995,
+        "release_render_p50_ms": 0.853688,
+        "release_render_p95_ms": 0.9838646,
+        "ledger_append_p50_ms": 15.830354,
+        "ledger_append_p95_ms": 17.166022899999998,
+        "total_p50_ms": 80.6158125,
+        "total_p95_ms": 89.12530975,
+        "amortized_p50_ms": 0.314905517578125,
+        "serial_equivalent_records_per_second": 3175.555664095056
+      },
+      {
+        "dataset": "UNSW_NB15",
+        "model": "LogReg",
+        "batch_size": 1,
+        "repeats": 100,
+        "preprocess_p50_ms": 6.985729,
+        "preprocess_p95_ms": 8.110633299999998,
+        "predict_p50_ms": 0.525812,
+        "predict_p95_ms": 0.6854874999999999,
+        "shap_p50_ms": 0.3942915,
+        "shap_p95_ms": 0.43211394999999997,
+        "release_render_p50_ms": 0.0505415,
+        "release_render_p95_ms": 0.08796525,
+        "ledger_append_p50_ms": 0.075771,
+        "ledger_append_p95_ms": 0.1164702,
+        "total_p50_ms": 8.032104499999999,
+        "total_p95_ms": 9.38625175,
+        "amortized_p50_ms": 8.032104499999999,
+        "serial_equivalent_records_per_second": 124.50037222498787
+      },
+      {
+        "dataset": "UNSW_NB15",
+        "model": "LogReg",
+        "batch_size": 32,
+        "repeats": 100,
+        "preprocess_p50_ms": 6.9967085,
+        "preprocess_p95_ms": 7.7208542,
+        "predict_p50_ms": 0.530146,
+        "predict_p95_ms": 0.6433497,
+        "shap_p50_ms": 0.40447900000000003,
+        "shap_p95_ms": 0.43083299999999997,
+        "release_render_p50_ms": 0.1421045,
+        "release_render_p95_ms": 0.17510659999999997,
+        "ledger_append_p50_ms": 1.7977915,
+        "ledger_append_p95_ms": 1.97645385,
+        "total_p50_ms": 9.871020999999999,
+        "total_p95_ms": 10.829758649999999,
+        "amortized_p50_ms": 0.30846940624999997,
+        "serial_equivalent_records_per_second": 3241.812574403398
+      },
+      {
+        "dataset": "UNSW_NB15",
+        "model": "LogReg",
+        "batch_size": 256,
+        "repeats": 100,
+        "preprocess_p50_ms": 7.1921254999999995,
+        "preprocess_p95_ms": 7.58804435,
+        "predict_p50_ms": 0.540208,
+        "predict_p95_ms": 0.62273545,
+        "shap_p50_ms": 0.4235415,
+        "shap_p95_ms": 0.4379851,
+        "release_render_p50_ms": 0.7702085000000001,
+        "release_render_p95_ms": 0.86449345,
+        "ledger_append_p50_ms": 14.1531875,
+        "ledger_append_p95_ms": 15.5088059,
+        "total_p50_ms": 23.073562000000003,
+        "total_p95_ms": 25.1842327,
+        "amortized_p50_ms": 0.09013110156250001,
+        "serial_equivalent_records_per_second": 11094.949275712175
+      },
+      {
+        "dataset": "UNSW_NB15",
+        "model": "XGBoost",
+        "batch_size": 1,
+        "repeats": 100,
+        "preprocess_p50_ms": 6.9619165,
+        "preprocess_p95_ms": 8.262858349999998,
+        "predict_p50_ms": 1.0752085,
+        "predict_p95_ms": 1.4929850999999998,
+        "shap_p50_ms": 1.9884795,
+        "shap_p95_ms": 2.3947749999999997,
+        "release_render_p50_ms": 0.051521,
+        "release_render_p95_ms": 0.09025239999999998,
+        "ledger_append_p50_ms": 0.0782915,
+        "ledger_append_p95_ms": 0.11426249999999996,
+        "total_p50_ms": 10.171271,
+        "total_p95_ms": 12.110473249999997,
+        "amortized_p50_ms": 10.171271,
+        "serial_equivalent_records_per_second": 98.31612981307842
+      },
+      {
+        "dataset": "UNSW_NB15",
+        "model": "XGBoost",
+        "batch_size": 32,
+        "repeats": 100,
+        "preprocess_p50_ms": 6.995229,
+        "preprocess_p95_ms": 7.821360449999999,
+        "predict_p50_ms": 1.1787915,
+        "predict_p95_ms": 1.4271809,
+        "shap_p50_ms": 8.1801245,
+        "shap_p95_ms": 9.588329799999999,
+        "release_render_p50_ms": 0.1490835,
+        "release_render_p95_ms": 0.20780685,
+        "ledger_append_p50_ms": 1.8096875,
+        "ledger_append_p95_ms": 2.0643347999999997,
+        "total_p50_ms": 18.297542,
+        "total_p95_ms": 21.015337849999998,
+        "amortized_p50_ms": 0.5717981875,
+        "serial_equivalent_records_per_second": 1748.8687824845545
+      },
+      {
+        "dataset": "UNSW_NB15",
+        "model": "XGBoost",
+        "batch_size": 256,
+        "repeats": 100,
+        "preprocess_p50_ms": 7.1994585,
+        "preprocess_p95_ms": 7.8280917,
+        "predict_p50_ms": 1.261084,
+        "predict_p95_ms": 1.4978627999999998,
+        "shap_p50_ms": 54.667875,
+        "shap_p95_ms": 58.9480274,
+        "release_render_p50_ms": 0.788771,
+        "release_render_p95_ms": 0.98061695,
+        "ledger_append_p50_ms": 14.1595415,
+        "ledger_append_p95_ms": 15.596091699999999,
+        "total_p50_ms": 77.993208,
+        "total_p95_ms": 85.4273503,
+        "amortized_p50_ms": 0.30466096875,
+        "serial_equivalent_records_per_second": 3282.3370978662656
+      }
+    ]
+  },
+  "verifier_sha256": "9499bb8fbb84daee5684144e25a92323da016ef79b1f48c7c870617d859cd582"
+}

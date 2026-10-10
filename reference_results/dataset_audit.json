@@ -1,0 +1,89 @@
+{
+  "UNSW_NB15": {
+    "source_rows": 2280090,
+    "earlier_population": 1087203,
+    "later_population": 1192887,
+    "boundary_spanning_rows_excluded": 0,
+    "official_full_corpus_rows": 2540044,
+    "official_full_corpus_equivalence_verified": false,
+    "dates_utc": {
+      "2015-01-22 00:00:00+00:00": 1052863,
+      "2015-01-23 00:00:00+00:00": 34340,
+      "2015-02-18 00:00:00+00:00": 1192887
+    },
+    "source_files": [
+      {
+        "name": "train-00000-of-00002.parquet",
+        "sha256": "2aada2a26d061111f4e8fb84e716f5f11264fee71abe04697d42cb89e488d047",
+        "size_bytes": 124419404
+      },
+      {
+        "name": "train-00001-of-00002.parquet",
+        "sha256": "7c6699ae967567977dee9e9193543b515255f4e1671ca79bf9ae65e7866ffef1",
+        "size_bytes": 105596940
+      }
+    ],
+    "repository_revision": "8ad6b19373f143086a66f52b0d6035a6959d83a9",
+    "sampled_train_before_cleaning": 160000,
+    "sampled_test_before_cleaning": 80000,
+    "train_duplicates_removed": 3054,
+    "test_duplicates_removed": 16614,
+    "test_train_predictor_overlaps_removed": 0,
+    "conflicting_predictor_label_groups": 0,
+    "n_train": 156946,
+    "n_test": 63386,
+    "train_attack_count": 2611,
+    "test_attack_count": 8157,
+    "train_max_end": 1421972723,
+    "test_min_start": 1424219012,
+    "prepared_sha256": {
+      "test_source_records.parquet": "ff8510038b877975241dc9fcd505bf579457da70e2c93459e7e4ff1675974d37",
+      "train_source_records.parquet": "dec567492cbea08b72b83fc9259761046442ade8d5a0eac4f05e820f1dd55bf5"
+    }
+  },
+  "TON_IOT": {
+    "source_rows": 211043,
+    "unordered_endpoint_pairs": 1004,
+    "timestamp_present": false,
+    "cached_train_test_tables_identical": true,
+    "train_endpoint_pairs_before_cleaning": 699,
+    "test_endpoint_pairs_before_cleaning": 305,
+    "category_counts": {
+      "normal": 50000,
+      "backdoor": 20000,
+      "ddos": 20000,
+      "dos": 20000,
+      "injection": 20000,
+      "password": 20000,
+      "ransomware": 20000,
+      "scanning": 20000,
+      "xss": 20000,
+      "mitm": 1043
+    },
+    "official_full_corpus_equivalence_verified": false,
+    "source_files": [
+      {
+        "name": "train_test_network.csv",
+        "sha256": "26ddc513552de36de6428b2e578efaed2b57504c716dfba847cc0109a64e1974",
+        "size_bytes": 29902775
+      }
+    ],
+    "repository_revision": "b953d9388d2db3bc392ea7150476e4f219a2a1cb",
+    "sampled_train_before_cleaning": 158469,
+    "sampled_test_before_cleaning": 52574,
+    "train_duplicates_removed": 19422,
+    "test_duplicates_removed": 6448,
+    "test_train_predictor_overlaps_removed": 1592,
+    "conflicting_predictor_label_groups": 0,
+    "n_train": 139047,
+    "n_test": 44534,
+    "train_attack_count": 108491,
+    "test_attack_count": 33113,
+    "train_pairs": 698,
+    "test_pairs": 305,
+    "prepared_sha256": {
+      "test_source_records.parquet": "cfe8e560c990038d5ec2c087d8fc2e45cc22d14c1359732383de167e3f3ea6e5",
+      "train_source_records.parquet": "bde9790b35cadd5757f0f14a095f746cd6bc49cf8b1cb565443a50c8e6df0764"
+    }
+  }
+}
