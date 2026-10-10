@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-10",
+  "status": "passed",
+  "scope": "Pre-publication snapshot of numerical-only packaging, unit tests, and saved-evidence export regression; not a new full model-training run or current GitHub status",
+  "platform": "ARM64 macOS, Python 3.14.6",
+  "original_computational_files_byte_identical": 11,
+  "original_package_files_unchanged": 45,
+  "manuscript_production_scripts_excluded": 3,
+  "new_numerical_exporters": 1,
+  "experiment_tests": {
+    "discovered": 25,
+    "passed": 21,
+    "skipped_missing_full_artifacts": 4
+  },
+  "release_and_export_tests": {
+    "passed": 21,
+    "skipped": 0
+  },
+  "experiment_suite_with_matplotlib_import_blocked": "passed, with the same four saved-evidence skips",
+  "real_evidence_export_regression": {
+    "evidence_sets": ["retained submission", "previous isolated full reproduction"],
+    "json_reports_preserved_exactly_per_set": 5,
+    "category_rows_per_set": 16,
+    "category_csv_byte_identical_to_previous_generator": true,
+    "original_evidence_unchanged": true,
+    "new_results_workflow_stage_exercised": true,
+    "document_or_figure_outputs_created": false
+  },
+  "saved_non_timing_reference_comparison": "passed within previously documented tolerances",
+  "new_full_model_retraining_performed": false,
+  "fresh_dependency_install_performed": false,
+  "network_dataset_download_exercised": false,
+  "github_actions_executed": false,
+  "committed_or_pushed": false,
+  "license": "No software license granted"
+}
